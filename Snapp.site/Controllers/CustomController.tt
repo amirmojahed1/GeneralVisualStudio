@@ -1,0 +1,24 @@
+﻿<#
+    // Define your model types
+    var models = new string[] { "Academic", "Ostad", "Course" , "College" , "Coursedate", "Employ"};
+#>
+
+using Core.Interfaces;
+using DataAccessLibrary.Models;
+using Microsoft.AspNetCore.Mvc;
+using System.IO;
+
+namespace Snapp.site.Controllers
+{
+<#
+    foreach (var model in models)
+    {
+#>
+    public class <#= model #>Controller : GenericController<<#= model #>>
+    {
+        public <#= model #>Controller(IRepository<<#= model #>> repository) : base(repository) { }
+    }
+<#
+    } // Closing foreach loop
+#>
+}

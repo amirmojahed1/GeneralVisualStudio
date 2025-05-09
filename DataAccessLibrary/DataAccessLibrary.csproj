@@ -6,6 +6,36 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net8.0\DataAccessLibrary.deps.json" />
+    <Content Include="bin\Debug\net8.0\DataAccessLibrary.runtimeconfig.json" />
+    <Content Include="obj\DataAccessLibrary.csproj.nuget.dgspec.json" />
+    <Content Include="obj\Debug\net8.0\DataAccessLibrary.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net8.0\DataAccessLibrary.sourcelink.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net8.0\DataAccessLibrary.dll" />
+    <None Include="bin\Debug\net8.0\DataAccessLibrary.pdb" />
+    <None Include="obj\DataAccessLibrary.csproj.nuget.g.props" />
+    <None Include="obj\DataAccessLibrary.csproj.nuget.g.targets" />
+    <None Include="obj\Debug\net8.0\DataAccessLibrary.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net8.0\DataAccessLibrary.assets.cache" />
+    <None Include="obj\Debug\net8.0\DataAccessLibrary.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net8.0\DataAccessLibrary.csproj.BuildWithSkipAnalyzers" />
+    <None Include="obj\Debug\net8.0\DataAccessLibrary.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net8.0\DataAccessLibrary.dll" />
+    <None Include="obj\Debug\net8.0\DataAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net8.0\DataAccessLibrary.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net8.0\DataAccessLibrary.pdb" />
+    <None Include="obj\Debug\net8.0\refint\DataAccessLibrary.dll" />
+    <None Include="obj\Debug\net8.0\ref\DataAccessLibrary.dll" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.4" />
