@@ -1,0 +1,110 @@
+<div class="parameter-form-container">
+
+  <div class="form-body">
+
+
+
+  <form [formGroup]="parameterForm" (ngSubmit)="onSubmit()">
+
+
+    <div class="form-header">
+      <h2>فرم ثبت پارامتر مورد استفاده در فرمهای اطلاعاتی</h2>
+    </div>
+
+
+    <div class="form-grid">
+      <!-- Row 1 -->
+
+      <div class="form-group">
+        <input id="title" type="text" formControlName="title" class="form-control">
+        <label for="title" >عنوان</label>
+      </div>
+
+      <div class="form-group">
+        <select id="groupName" formControlName="groupName" class="form-control">
+          <option value="">انتخاب کنید</option>
+          <option value="group1">گروه 1</option>
+          <option value="group2">گروه 2</option>
+          <option value="group3">گروه 3</option>
+        </select>
+        <label for="groupName">نام سرگروه</label>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="form-group">
+        <select id="valueControl" formControlName="valueControl" class="form-control">
+          <option value="">انتخاب کنید</option>
+          <option value="text">متن</option>
+          <option value="number">عدد</option>
+          <option value="date">تاریخ</option>
+        </select>
+        <label for="valueControl">کنترل مقدار</label>
+      </div>
+
+      <div class="form-group">
+        <input id="value" type="text" formControlName="value" class="form-control">
+        <label for="value">مقدار</label>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="form-group">
+        <select id="status" formControlName="status" class="form-control">
+          <option value="">انتخاب کنید</option>
+          <option value="active">فعال</option>
+          <option value="inactive">غیرفعال</option>
+        </select>
+        <label for="status">وضعیت</label>
+      </div>
+
+      <div class="form-group">
+        <select id="displayPriority" formControlName="displayPriority" class="form-control">
+          <option value="">انتخاب کنید</option>
+          <option value="1">یک</option>
+          <option value="2">دو</option>
+          <option value="3">سه </option>
+          <option value="4">چهار</option>
+          <option value="5">پنج</option>
+        </select>
+        <label for="displayPriority">
+        اولویت نمایش
+
+      </label>
+      </div>
+
+  </div>
+
+   <!-- Row 4 - Description spans full width -->
+
+  <div class="description-group form-griddescription">
+
+    <label for="description">توضیحات</label>
+    <textarea id="description" formControlName="description" class="form-control" rows="5"></textarea>
+
+  </div>
+
+  <div class="button-container">
+
+    <button class="import-button" title="ثبت" (click)="onSubmitAndNew()">
+      ثبت
+        <img src="../../assets/Icons/plus2.png" alt="Import" class="icon">
+    </button>
+    <button class="import-button" title="لغو" (click)="onCancel()">
+      لغو
+       <img src="../../assets/Icons/cancel2.png" alt="Cancel" class="icon">
+    </button>
+
+    <button class="import-button" title="ثبت و درخواست جدید" (click)="onSubmitAndNew()">
+      ثبت و درخواست جدید
+       <img src="../../assets/Icons/plus2.png" alt="Cancel" class="icon">
+    </button>
+
+  </div>
+
+</form>
+
+</div>
+</div>
+
+
+
+

@@ -1,0 +1,9 @@
+/* html, body {
+  height: 100%;
+  margin: 0;
+} */
+
+.app-header {
+  text-align: center;
+  padding: 20px 0; /* Optional: adds spacing around the heading */
+}

@@ -1,0 +1,64 @@
+body {
+  font-family: 'B Nazanin', sans-serif;
+  margin: 20px;
+  direction: rtl; /* Right-to-left for Arabic text */
+}
+.container {
+  width: fit-content;
+  margin: auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  white-space: nowrap; /* Prevent text wrapping in headers */
+}
+th {
+  background-color: #d9ead3; /* Light green for headers */
+  font-weight: bold;
+  color: #333;
+}
+.header-row th {
+  background-color: #8cbf7f; /* Darker green for the main title header */
+  color: white;
+  font-size: 1.1em;
+  padding: 10px;
+}
+.filter-icon {
+  margin-left: 5px; /* Adjust spacing for filter icon */
+}
+.action-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px; /* Space between icons */
+}
+.action-icons img {
+  width: 16px; /* Adjust icon size */
+  height: 16px;
+  cursor: pointer;
+}
+.blue-plus {
+  color: blue;
+  font-size: 2.4em; /* Adjust size if needed */
+  font-weight: normal; /* Changed from 'bold' to 'normal' to make strokes thinner overall */
+}
+/* No specific CSS needed for .action-x-svg anymore, as we are using an img */
+.action-icon-img { /* New class for the image, if you want specific sizing */
+  width: 20px; /* Adjust size to fit cell */
+  height: 20px; /* Adjust size to fit cell */
+  vertical-align: middle; /* Helps align with other icons/text */
+  cursor: pointer; /* Indicate it's clickable */
+}
+.pagination {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: #555;
+}

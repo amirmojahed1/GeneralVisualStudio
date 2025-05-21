@@ -3,8 +3,9 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
+  standalone: false,
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
   title = 'Client';
@@ -13,7 +14,7 @@ export class AppComponent implements OnInit {
   constructor(private http:HttpClient){}
 
   ngOnInit(): void {
-    this.http.get('https://localhost:7024/api/InformationForm').subscribe((data)=>{
+    this.http.get('https://localhost:7024/api/Parameter').subscribe((data)=>{
       this.users=data;
     },(error)=>{
       console.log(error);
@@ -23,3 +24,6 @@ export class AppComponent implements OnInit {
   }
 
 }
+
+
+

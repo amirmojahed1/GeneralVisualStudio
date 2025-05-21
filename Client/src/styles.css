@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'vazir';
+  font-style: normal;
+  font-weight: 100;
+  src: url("Fonts/Vazir-Thin.eot"); /* IE9 */
+  src: url("Fonts/Vazir-Thin.eot?#iefix") format("embedded-opentype"),
+       url("Fonts/Vazir-Thin.woff2") format("woff2"),
+       url("Fonts/Vazir-Thin.woff") format("woff"),
+       url("Fonts/Vazir-Thin.ttf") format("truetype");
+}
+
+body {
+  font-family: 'vazir', sans-serif;
+}

@@ -1,22 +1,31 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HttpClientModule} from '@angular/common/http';
-import { InformationFormComponent } from './information-form/information-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
+
+import { AppComponent } from './app.component';
+import { ParameterFormComponent } from './parameter-form/parameter-form.component';
+import { ParameterListComponent } from './parameter-list/parameter-list.component';
+
+const routes: Routes = [
+  { path: '', redirectTo: '/parameters/new', pathMatch: 'full' },
+  { path: 'parameters', component: ParameterListComponent },
+  { path: 'parameters/new', component: ParameterFormComponent },
+  { path: 'parameters/edit/:id', component: ParameterFormComponent }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    InformationFormComponent
+    ParameterFormComponent,
+    ParameterListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

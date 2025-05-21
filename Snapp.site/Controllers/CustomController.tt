@@ -1,6 +1,6 @@
 ﻿<#
     // Define your model types
-    var models = new string[] { "Academic", "Ostad", "Course" , "College" , "Coursedate", "Employ"};
+    var models = new string[] { "Parameter"};
 #>
 
 using Core.Interfaces;
