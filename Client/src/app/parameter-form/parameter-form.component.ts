@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-parameter-form',
-  standalone: false ,
+  // standalone: false ,
   templateUrl: './parameter-form.component.html',
   styleUrls: ['./parameter-form.component.css']
 })

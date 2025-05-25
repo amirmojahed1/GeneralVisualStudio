@@ -29,6 +29,7 @@ th {
   color: white;
   font-size: 1.1em;
   padding: 10px;
+  text-align: center;
 }
 .filter-icon {
   margin-left: 5px; /* Adjust spacing for filter icon */
@@ -62,3 +63,14 @@ th {
   font-size: 0.9em;
   color: #555;
 }
+
+.search-input {
+  background-image: url('../../assets/img/Magnifier.png');
+  background-repeat: no-repeat;
+  background-position: left center; /* Adjust position */
+  background-size: 20px; /* Adjust size */
+  padding-left: 25px; /* Create space for icon */
+  width: 100%;
+}
+
+

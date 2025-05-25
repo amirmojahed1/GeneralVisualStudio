@@ -1,0 +1,20 @@
+{
+  "farsi": {
+    "headerTitle": "لیست اطلاعات پایه",
+    "name": "نام",
+    "position": "مکان",
+    "office": "اداره",
+    "age": "سن",
+    "startDate": "تاریخ شروع",
+    "salary": "حقوق"
+  },
+  "english": {
+    "headerTitle": "Basic Information List",
+    "name": "Name",
+    "position": "Position",
+    "office": "Office",
+    "age": "Age",
+    "startDate": "Start Date",
+    "salary": "Salary"
+  }
+}

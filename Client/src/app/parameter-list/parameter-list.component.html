@@ -2,7 +2,7 @@
 <body>
 
   <div class="container">
-      <table>
+      <table id="example" class="display" style="width:100%">
           <thead>
               <tr class="header-row">
                   <th colspan="8">لیست اطلاعات پایه</th>
@@ -10,7 +10,7 @@
               <tr>
                   <th>
                     <div class="action-icons">
-                      <img src="../../assets/Icons/add.png" alt="Delete Icon" class="action-icon-img" (click)="createNewParameter()">
+                      <img src="../../assets/Icons/add.png" alt="add Icon" class="action-icon-img" (click)="createNewParameter()">
                   </div>
                   </th>
 
@@ -18,43 +18,54 @@
                   <th>
                     <div class="action-icons">
                       شناسه سریالی
-                    <img src="../../assets/Icons/filter.png" alt="Delete Icon" class="action-icon-img">
+                    <img src="../../assets/Icons/filter.png" alt="filterIcon" class="action-icon-img">
                     </div>
                  </th>
                  <th>
                   <div class="action-icons">
                       عنوان
-                  <img src="../../assets/Icons/filter.png" alt="Delete Icon" class="action-icon-img">
+                  <img src="../../assets/Icons/filter.png" alt="filterIcon" class="action-icon-img">
                   </div>
                </th>
                <th>
                 <div class="action-icons">
                 نام سرگروه
-                <img src="../../assets/Icons/filter.png" alt="Delete Icon" class="action-icon-img">
+                <img src="../../assets/Icons/filter.png" alt="filterIcon" class="action-icon-img">
                 </div>
              </th>
              <th>
               <div class="action-icons">
               مقدار
-              <img src="../../assets/Icons/filter.png" alt="Delete Icon" class="action-icon-img">
+              <img src="../../assets/Icons/filter.png" alt="filterIcon" class="action-icon-img">
               </div>
            </th>
            <th>
             <div class="action-icons">
                 اولویت نمایش
-            <img src="../../assets/Icons/filter.png" alt="Delete Icon" class="action-icon-img">
+            <img src="../../assets/Icons/filter.png" alt="filterIcon" class="action-icon-img">
             </div>
          </th>
 
                   <th>وضعیت</th>
+              </tr>
+
+              <tr>
+                <th></th>
+                <th></th>
+                <th>م</th>
+                <th>مکان</th>
+                <th>اداره</th>
+                <th>سن</th>
+                <th>تاریخ شروع</th>
+                <th></th>
               </tr>
           </thead>
           <tbody>
               <tr *ngFor="let parameter of parameters">
                   <td>
                     <div class="action-icons">
-                      <img src="../../assets/Icons/pencil.png" alt="Edit Icon" class="action-icon-img" (click)="editParameter(parameter.id!)">
-                      <img src="../../assets/Icons/letter-x.png" alt="Delete Icon" class="action-icon-img" (click)="deleteParameter(parameter.id)">
+                      <img src="../../assets/Icons/pencil.png" alt="Edit Icon" class="action-icon-img" >
+                      <img src="../../assets/Icons/letter-x.png" alt="Delete Icon" class="action-icon-img" >
                   </div>
                   </td>
 

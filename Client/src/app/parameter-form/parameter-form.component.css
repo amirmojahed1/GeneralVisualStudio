@@ -256,4 +256,14 @@ select.form-control {
   height: 20px;
 }
 
-
+.action-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px; /* Space between icons */
+}
+.action-icons img {
+  width: 16px; /* Adjust icon size */
+  height: 16px;
+  cursor: pointer;
+}
